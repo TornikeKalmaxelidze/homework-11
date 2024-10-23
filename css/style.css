@@ -52,12 +52,26 @@ header {
     font-weight: 400;
     line-height: 32px;
     color: #DFD9D9;
+    text-align: center;
 
     
 
 }
 a {
     color: #91B599;
+}
+.header_logos_img {
+    width: 48px;
+    height: 48px;
+}
+
+
+
+img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
 }
 
 button {
@@ -138,10 +152,15 @@ aside {
 /* section 1 */
 .section1 {
     grid-area: section1;
-
+    
 
 }
-
+.long_chair {
+    height: 340px;
+}
+.left_chair {
+    height: 146px;
+}
 /* section 2 */
 .section2 {
     grid-area: section2;
