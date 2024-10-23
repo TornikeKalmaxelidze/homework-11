@@ -26,42 +26,19 @@
 
 header {
     grid-area: header;
-   display: flex;
-   justify-content: space-between;
-
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
 }
-
-.headerlogo {
-    width: 48px;
-    height: 43.5px;
-
-
-}
-
 
 .header_nav {
     display: flex;
-    /* არ მუშაობს ეს არამზადა */
-    justify-content: space-between;
-
 }
 
-/* ჯასტიფაი სპაცე-ბითვინით რო არ იმუშავა ამ მახინჯობით გავაკეთე  */
-/* 2 საათი ვწვალე ყვეალაფერი ვცადე და ვერ ვიპოცე რატო შვება */
-.margin1 {
-    margin-left: 352px;
-}
-
-.margin {
-    margin-right: 352px;
-}
-
-.header_logos {
-    margin-right: 25px;
-}
-.header_logos:hover {
-    box-shadow: 0px 0px 10px white;
-
+.header_article {
+    display: flex;
+    column-gap: 36px;
+    align-items: center;
 }
 
 .header_nav_ul {
@@ -74,9 +51,45 @@ header {
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    color: var(--color-fontcolor);
+    color: #DFD9D9;
+
+    
 
 }
+a {
+    color: #91B599;
+}
+
+button {
+    width: 32px;
+    height: 32px;
+    padding: 4px;
+    border-radius: 4px;
+    border-style: none;
+    background: #00000033;
+
+}
+
+.fa-solid {
+    color: #91B599;
+    text-shadow: 0px 2px 4px -2px #DFD9D966 inset;
+    box-shadow: 0px 2px 4px 0px #00000033;
+
+}
+
+.color {
+    color: #C3B97F;
+    box-shadow: 0px 2px 4px -2px #DFD9D966 inset;
+    box-shadow: 0px 2px 4px 0px #00000033;
+
+}
+
+.fa-solid:hover {
+    color:white;
+}
+
+
+
 
 .header_nav_ul_li:hover {
     text-shadow: 0px 0px 10px white;
@@ -90,13 +103,13 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    row-gap: 16px;
+    row-gap: 20px;
+
     box-shadow: 0px 4px 4px 0px #00000033;
     box-shadow: 0px -1px 4px 0px #DFD9D966 inset;
     background: #00000033;
 
 }
-
 
 .aside_text_caption {
 
@@ -115,6 +128,7 @@ aside {
     font-size: 15px;
     font-weight: 400;
     line-height: 25px;
+    margin-top: 4px;
 }
 
 .aside_li:hover {
@@ -182,9 +196,11 @@ aside {
     cursor: pointer;
     border-style: none;
 }
+
 .button1:hover {
-    color:gray;
+    color: gray;
 }
+
 /* article 2  */
 .article2 {
     grid-area: article2;
